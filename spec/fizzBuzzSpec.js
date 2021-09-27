@@ -11,7 +11,16 @@ describe("FizzBuzz", function () {
     });
   });
 
-  // describe("div by 5", function () {
-  //   it("is Buzz", function () {});
-  // });
+  describe("div by 5", function () {
+    it("is Buzz", function () {
+      expect(fizzBuzz.isDivisibleByFive(5)).toBe("Buzz");
+    });
+  });
+
+  describe("div by 3 and 5", function () {
+    it("is FizzBuzz", function () {
+      expect(fizzBuzz.isDivisibleByBoth(15)).toBe("FizzBuzz");
+    });
+  });
 });
+//
