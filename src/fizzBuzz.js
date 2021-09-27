@@ -1,5 +1,5 @@
 class FizzBuzz {
   isDivisibleByThree(number) {
-    return number % 3 === 0;
+    if (number % 3 === 0) return "Fizz";
   }
 }

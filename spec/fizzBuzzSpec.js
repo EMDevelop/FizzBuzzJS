@@ -1,10 +1,17 @@
 describe("FizzBuzz", function () {
   let fizzBuzz;
 
+  beforeEach(function () {
+    fizzBuzz = new FizzBuzz();
+  });
+
   describe("number is div by 3", function () {
-    it("div 3 ?", function () {
-      fizzBuzz = new FizzBuzz();
-      expect(fizzBuzz.isDivisibleByThree(3)).toBe(true);
+    it("is Fizz", function () {
+      expect(fizzBuzz.isDivisibleByThree(3)).toBe("Fizz");
     });
   });
+
+  // describe("div by 5", function () {
+  //   it("is Buzz", function () {});
+  // });
 });
