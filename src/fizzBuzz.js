@@ -1,7 +1,13 @@
 class FizzBuzz {
   start(num) {
+    if (this._isDivisibleByBoth(num)) return "FizzBuzz";
     if (this._isDivisibleByThree(num)) return "Fizz";
     if (this.__isDivisibleByFive(num)) return "Buzz";
+    return num;
+  }
+
+  _isDivisibleByBoth(number) {
+    return this.__isDivisibleByFive(number) && this._isDivisibleByThree(number);
   }
 
   __isDivisibleByFive(number) {
@@ -15,12 +21,4 @@ class FizzBuzz {
   _isDivisibleBy(number, divisor) {
     return number % divisor === 0;
   }
-
-  // isDivisibleByFive(number) {
-  //   if (number % 5 === 0) return "Buzz";
-  // }
-
-  // isDivisibleByBoth(number) {
-  //   if (number % 5 === 0 && number % 3 === 0) return "FizzBuzz";
-  // }
 }

@@ -29,22 +29,28 @@ describe("FizzBuzz", function () {
     });
   });
 
-  // describe("div by 5", function () {
-  //   it("is Buzz", function () {
-  //     expect(fizzBuzz.isDivisibleByFive(5)).toBe("Buzz");
-  //   });
-  // });
+  describe("number is div by 5", function () {
+    it("is FizzBuzz", function () {
+      expect(fizzBuzz.start(30)).toBe("FizzBuzz");
+    });
+  });
 
-  // describe("div by 3 and 5", function () {
-  //   it("is FizzBuzz", function () {
-  //     expect(fizzBuzz.isDivisibleByBoth(15)).toBe("FizzBuzz");
-  //   });
-  // });
+  describe("number is div by 5", function () {
+    it("is FizzBuzz", function () {
+      expect(fizzBuzz.start(90)).toBe("FizzBuzz");
+    });
+  });
 
-  // describe("any other number", function(){
-  //   it("is input number", function () {
-  //     expect(fizzBuzz.)
-  //   })
-  // })
+  describe("Number is not div by 3 or 5", function () {
+    it("is FizzBuzz", function () {
+      expect(fizzBuzz.start(2)).toBe(2);
+    });
+  });
+
+  describe("Number is not div by 3 or 5", function () {
+    it("is FizzBuzz", function () {
+      expect(fizzBuzz.start(19)).toBe(19);
+    });
+  });
 });
 //
